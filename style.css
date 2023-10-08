@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+    color: black;
+}
+/*header*/
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.lista ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2.3rem;
+}
+.lista ul li{
+    background-color: rgb(218, 221, 221);
+    border-radius: 22px;
+    padding: 0.7rem;
+}
+.lista ul li a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.lista ul li:hover{
+    background-color: transparent;
+    transition: 0.4s;
+}
+.lista ul li a:hover{
+    font-size: 17px;
+    transition: 0.4s;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(218, 221, 221);
+    border: none;
+    border-radius: 22px;
+    padding: 0.7rem;
+    width: 114px;
+}
+.logo h1{
+    font-size: 16px;
+}
+/*menu*/
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background:black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background:black;
+}
+/*menu*/
+.item-lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.lista ul li.item-final-lista{
+    background-color: white;
+    border: 2px solid rgb(218, 221, 221);
+    border-radius: 22px;
+}
+.inicial-icon{
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 50%;
+}
+/*sessao de inicio*/
+.box-inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 3rem;
+}
+.container-1-inicio{
+    background-color: rgb(214, 238, 127);
+    width: 40%;
+    height: 65vh;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-conteudo-inicio{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.container-conteudo-inicio p{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.container-conteudo-inicio .forest-icon{
+    font-size: 25px;
+}
+.container-conteudo-inicio h1{
+    font-size: 40px;
+}
+.botoes-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.botoes-container button{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 22px;
+    background-color: rgb(173, 185, 103);
+    color: rgb(71, 72, 73);
+}
+.botoes-container button.subscribe{
+    background-color: white;
+}
+.rodape-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.icon-female{
+    font-size: 40px;
+}
+.container-2-inicio{
+    background-image: url(img/environment-6490647_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 65vh;
+    border: none;
+    border-radius: 30px;
+}
+.container-conteudo-2-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 18rem;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 190px;
+    border: 1px solid black;
+    border-radius: 22px;
+}
+.card img{
+    width: 65px;
+    border-radius: 10px;
+}
+.voluntarios-icon{
+    background-color: rgb(214, 238, 127);
+    border: none;
+    border-radius: 50%;
+    padding: .4rem;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: rgb(214, 238, 127);
+    margin: 1rem;
+    text-decoration: 3px solid black;
+}
+.redes-sociais iconify-icon{
+    border: 1px solid rgb(214, 238, 127);
+    border-radius: 50%;
+    padding: .4rem;
+    font-weight: bold;
+}
+/*sessao dobre o assunto*/
+.box-sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
+}
+.conjunto-de-titulos-sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.conjunto-de-titulos-sobre h1{
+    font-size: 40px;
+}
+.conjunto-de-titulos-sobre p{
+    width: 500px;
+}
+.botoes-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+}
+.botoes-sobre button{
+    padding: 0.5rem;
+    border: 1px solid rgb(71, 72, 73);
+    border-radius: 22px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    gap: 1rem;
+}
+.botoes-sobre button.saiba-mais{
+    border: none;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.botoes-sobre button.saiba-mais iconify-icon{
+    color: rgb(212, 212, 84);
+}
+.conjunto-de-itens-sobre{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.item-bar-1{
+    width: 150px;
+    padding: 2rem;
+    background-color: rgb(218, 221, 221);
+    border: none;
+    border-radius: 40px;
+}
+.item-bar-1 h1{
+    font-size: 40px;
+}
+.item-bar-2{
+    width: 150px;
+    height: 6vh;
+    padding: 2rem;
+    background-image: url(img/death-valley-89261_1280.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-bar-2 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.item-bar-3{
+    width: 150px;
+    padding: 2rem;
+    background-color: rgb(212, 212, 84);
+    border: none;
+    border-radius: 40px;
+}
+.item-bar-3 iconify-icon{
+    font-size: 40px;
+}
+.item-bar-4{
+    width: 150px;
+    height: 6vh;
+    padding: 2rem;
+    background-image: url(img/amazon-4769367_1280.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-bar-4 h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+/*sessao de iniciativas*/
+.box-iniciativas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+.conjunto-de-titulos-iniciativas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+}
+.conjunto-de-titulos-iniciativas h1{
+    font-size: 40px;
+}
+.conjunto-de-titulos-iniciativas p{
+    font-size: 15px;
+    width: 300px;
+}
+.conjunto-de-listas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -4rem;
+}
+.listas-iniciativas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.listas-iniciativas ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.listas-iniciativas ul h1{
+    color: rgb(71, 72, 73);
+    font-size: 17px;
+}
+.listas-iniciativas ul li{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 1px 0 0  black ;
+    padding: 1rem;
+    padding-right: 9rem;
+}
+.listas-iniciativas ul li a{
+    font-size: 16px;
+    border: 1px solid black;
+    padding: .4rem;
+    border-radius: 22px;
+    font-weight: none;
+}
+.listas-iniciativas ul li a:hover{
+    background-color: yellow;
+    transition: 0.1s;
+}
+.listas-iniciativas  ul .last{
+    padding-right: 2rem;
+}
+/*sessao de riscos*/
+.box-riscos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.6rem;
+    margin-bottom: 4rem;
+}
+.container-riscos{
+    background-image: url(img/beach-2444040_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 80vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: space-between;
+    .titulo-risco .item-lista-riscos{
+        display: none;
+    }
+}
+.container-riscos:hover{
+    width: 30%;
+    transition: 0.3s;
+    .titulo-risco .item-lista-riscos{
+        display: flex;
+    }
+}
+.segundo-risco{
+    background-image:url(img/iceberg-404966_1280.jpg);
+}
+.terceiro-risco{ 
+    background-image: url(img/mountain-2143877_1280.jpg);
+}
+.quarto-risco{
+    background-image:url(img/snow-834111_1280.jpg) ;
+}
+.titulo-risco{
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.titulo-risco .item-lista-riscos{
+    padding: 0.5rem;
+    color: rgb(212, 212, 84);
+    border: 1px solid rgb(212, 212, 84);
+    border-radius: 25px;
+}
+.titulo-risco p .lista-icon{
+    padding: 0.5rem;
+    color: rgb(212, 212, 84);
+    border: 1px solid rgb(212, 212, 84);
+    border-radius: 25px;
+}
+.titulo-risco p .lista-icon:hover{
+    background-color: rgb(212, 212, 84);
+    color: black;
+    border: black;
+    transition: 0.1s;
+}
+.conteudo-risco{
+    padding: 1rem;
+}
+.conteudo-risco h1{
+    font-size: 30px;
+}
+.conteudo-risco button{
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 22px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.poluicao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+/*sessao de noicias*/
+.box-noticias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 7rem;
+    background-color: rgb(218, 221, 221);
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+.botao-noticia button{
+    padding: 0.5rem;
+    border: 1px  solid rgb(71, 72, 73);
+    border-radius: 22px;
+    background-color: transparent;
+}
+.botao-noticia button:hover{
+    background-color: rgb(71, 72, 73);
+    color: white;
+    transition: 0.3s;
+}
+.inscrição{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.inscrição h1{
+    width: 500px;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.formulario button{
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(71, 72, 73);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.formulario button:hover{
+    background-color: rgb(71, 72, 73);
+    color: white;
+    transition: 0.3s;
+}
+.form-path{
+    background-color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 22px;
+    padding-right: 4rem;
+}
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(218, 221, 221);
+}
